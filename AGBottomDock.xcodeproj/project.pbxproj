@@ -13,6 +13,10 @@
 		D77A9CF51C018D7900D8DAFF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D77A9CF31C018D7900D8DAFF /* Main.storyboard */; };
 		D77A9CF71C018D7900D8DAFF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D77A9CF61C018D7900D8DAFF /* Assets.xcassets */; };
 		D77A9CFA1C018D7900D8DAFF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D77A9CF81C018D7900D8DAFF /* LaunchScreen.storyboard */; };
+		D77A9D061C018E1500D8DAFF /* Dock.m in Sources */ = {isa = PBXBuildFile; fileRef = D77A9D031C018E1500D8DAFF /* Dock.m */; };
+		D77A9D071C018E1500D8DAFF /* DockItem.m in Sources */ = {isa = PBXBuildFile; fileRef = D77A9D051C018E1500D8DAFF /* DockItem.m */; };
+		D77A9D0C1C018EE700D8DAFF /* FirstViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D77A9D0A1C018EE700D8DAFF /* FirstViewController.m */; };
+		D77A9D0D1C018EE700D8DAFF /* FirstViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D77A9D0B1C018EE700D8DAFF /* FirstViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +30,13 @@
 		D77A9CF61C018D7900D8DAFF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D77A9CF91C018D7900D8DAFF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D77A9CFB1C018D7900D8DAFF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D77A9D021C018E1500D8DAFF /* Dock.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Dock.h; sourceTree = "<group>"; };
+		D77A9D031C018E1500D8DAFF /* Dock.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Dock.m; sourceTree = "<group>"; };
+		D77A9D041C018E1500D8DAFF /* DockItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DockItem.h; sourceTree = "<group>"; };
+		D77A9D051C018E1500D8DAFF /* DockItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DockItem.m; sourceTree = "<group>"; };
+		D77A9D091C018EE700D8DAFF /* FirstViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FirstViewController.h; sourceTree = "<group>"; };
+		D77A9D0A1C018EE700D8DAFF /* FirstViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FirstViewController.m; sourceTree = "<group>"; };
+		D77A9D0B1C018EE700D8DAFF /* FirstViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FirstViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +69,8 @@
 		D77A9CE91C018D7900D8DAFF /* AGBottomDock */ = {
 			isa = PBXGroup;
 			children = (
+				D77A9D081C018E9A00D8DAFF /* Controllers */,
+				D77A9D011C018D9700D8DAFF /* Dock */,
 				D77A9CED1C018D7900D8DAFF /* AppDelegate.h */,
 				D77A9CEE1C018D7900D8DAFF /* AppDelegate.m */,
 				D77A9CF01C018D7900D8DAFF /* ViewController.h */,
@@ -77,6 +90,27 @@
 				D77A9CEB1C018D7900D8DAFF /* main.m */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		D77A9D011C018D9700D8DAFF /* Dock */ = {
+			isa = PBXGroup;
+			children = (
+				D77A9D021C018E1500D8DAFF /* Dock.h */,
+				D77A9D031C018E1500D8DAFF /* Dock.m */,
+				D77A9D041C018E1500D8DAFF /* DockItem.h */,
+				D77A9D051C018E1500D8DAFF /* DockItem.m */,
+			);
+			path = Dock;
+			sourceTree = "<group>";
+		};
+		D77A9D081C018E9A00D8DAFF /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				D77A9D091C018EE700D8DAFF /* FirstViewController.h */,
+				D77A9D0A1C018EE700D8DAFF /* FirstViewController.m */,
+				D77A9D0B1C018EE700D8DAFF /* FirstViewController.xib */,
+			);
+			path = Controllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -139,6 +173,7 @@
 				D77A9CFA1C018D7900D8DAFF /* LaunchScreen.storyboard in Resources */,
 				D77A9CF71C018D7900D8DAFF /* Assets.xcassets in Resources */,
 				D77A9CF51C018D7900D8DAFF /* Main.storyboard in Resources */,
+				D77A9D0D1C018EE700D8DAFF /* FirstViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -150,7 +185,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				D77A9CF21C018D7900D8DAFF /* ViewController.m in Sources */,
+				D77A9D0C1C018EE700D8DAFF /* FirstViewController.m in Sources */,
 				D77A9CEF1C018D7900D8DAFF /* AppDelegate.m in Sources */,
+				D77A9D061C018E1500D8DAFF /* Dock.m in Sources */,
+				D77A9D071C018E1500D8DAFF /* DockItem.m in Sources */,
 				D77A9CEC1C018D7900D8DAFF /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -263,7 +301,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = AGBottomDock/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.lecarx.AGBottomDock;
+				PRODUCT_BUNDLE_IDENTIFIER = com.agenric.AGBottomDock;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -274,7 +312,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = AGBottomDock/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.lecarx.AGBottomDock;
+				PRODUCT_BUNDLE_IDENTIFIER = com.agenric.AGBottomDock;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
